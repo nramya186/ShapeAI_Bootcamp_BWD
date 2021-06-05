@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background: lightblue url("img_tree.gif");
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  50% {
+    background-color: rgb(127, 127, 207);
+  }
+}
+
+header {
+  background-color: rgb(3, 3, 12);
+  font-family: "Times New Roman", Times, serif;
+  margin: auto -10px;
+  background-clip: border-box;
+  padding: 16px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: initial;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-delay: 2s;
+}
+@keyframes mymove {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 60px;
+  }
+}
+
+footer {
+  position: absolute;
+  left: 100px;
+  top: 700px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  position: absolute;
+  top: 100px;
+  color: rgb(10, 10, 10);
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.post {
+  background: rgb(224, 201, 201);
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.post h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.post p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  animation: mymove 5s infinite;
+  animation-delay: 2s;
+}
